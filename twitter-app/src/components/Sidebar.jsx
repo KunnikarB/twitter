@@ -1,33 +1,37 @@
-import { USERS_FOR_RIGHT_PANEL } from '../db/dummy';
-import { IoSearchOutline } from 'react-icons/io5';
+import Xsvg from './svgs/X';
+import { MdHomeFilled } from 'react-icons/md';
+import { IoNotifications } from 'react-icons/io5';
+import { FaUser } from 'react-icons/fa';
+import '../index.css';
 
-const RightSidebar = () => {
+const Sidebar = () => {
+  const style = {
+    marginRight: '10px',
+    fontSize: '20px',
+  };
   return (
-    <div className="right-sidebar">
-      <div className="search">
-        <div className="icon">
-          <IoSearchOutline />
-        </div>
-        <input type="text" placeholder="Search" />
+    <div>
+      <div className="logo">
+        <Xsvg />
       </div>
+      <div className="sidebar">
+        <ul>
+          <li>
+            <MdHomeFilled style={style} />
+            Home
+          </li>
 
-      <h2>Who to follow</h2>
-      <div className="who-to-follow">
-        {USERS_FOR_RIGHT_PANEL.map((user) => (
-          <div key={user.id} className="user">
-            <div className="user-info">
-              <img className="logo" src={user.profileImg} alt={user.name} />
-              <div>
-                <h4>{user.fullName}</h4>
-                <p>@{user.username}</p>
-              </div>
-            </div>
-            <button className="follow-btn">Follow</button>
-          </div>
-        ))}
+          <li>
+            <IoNotifications style={style} />
+            Notifications
+          </li>
+          <li>
+            <FaUser style={style} />
+            Profile
+          </li>
+        </ul>
       </div>
     </div>
   );
 };
-
-export default RightSidebar;
+export default Sidebar;
