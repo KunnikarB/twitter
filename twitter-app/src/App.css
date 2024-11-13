@@ -41,6 +41,7 @@
   grid-template-columns: 1fr 1fr;
   border-bottom: 1px solid #626060;
   text-align: center;
+  padding: 1rem;
 
   & .forYou, .following {
     font-size: 1rem;
