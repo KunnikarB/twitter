@@ -1,7 +1,10 @@
 import {useState} from 'react';
 import TweetInput from '../components/TweetInput';
 import TweetList from '../components/TweetList';
-import Tweet from '../components/Tweet';
+import Header from '../components/Header';
+import Profile from '../components/Profile';
+import RightSidebar from '../components/RightSidebar';
+import Sidebar from '../components/Sidebar';
 import AppContext from '../AppContext';
 
 import '../App.css';
@@ -25,7 +28,10 @@ const Home = () => {
   return (
     <AppContext.Provider value={{ tweets, setTweets, user, setUser }}>
       <div className="layout ">
-        
+        <div className="left-sidebar">
+          <Sidebar />
+          <Profile />
+        </div>
 
         <div className="homepage ">
           <div className="">
@@ -44,7 +50,9 @@ const Home = () => {
           </div>
         </div>
 
-        
+        <div className="right-sidebar">
+          <RightSidebar />
+        </div>
       </div>
     </AppContext.Provider>
   );
