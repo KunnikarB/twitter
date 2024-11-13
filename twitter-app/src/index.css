@@ -1,0 +1,283 @@
+:root {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  color-scheme: light dark;
+  color: #FFFFFF;
+  background-color: #000000;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  --theme-color: #f91680;
+  --faded-theme-color: #f916803c;
+}
+
+body {
+  margin: 0;
+  background-color: black;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+    'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+span {
+  display: block;
+}
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  font-weight: 500;
+  color: #1F9BF0;
+  text-decoration: none;
+}
+a:hover {
+  color: #1F9BF0;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  cursor: pointer;
+  
+  & ul li {
+    margin-bottom: 0.8rem;
+    padding: 0.5rem;
+    transition: all 0.25s;
+    
+  }
+
+  & ul li:hover {
+    background-color: #3e3e3e;
+    border-radius: 20px;
+  }
+}
+
+
+.profile {
+  text-align: center;
+
+  & h3 {
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 0.5rem;
+  }
+
+  & p {
+    font-size: 0.8rem;
+    margin: 0;
+  }
+
+  & img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-top: 1.5rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+  margin-top: 2rem; 
+}
+
+form {
+  display: flex; 
+  margin-bottom: 2rem;
+}
+
+input[type=text] {
+  width: 100%;
+  padding: 0.8rem;
+  border-radius: 20px;
+  border: 1px solid #181819;
+  background-color: #202327;
+  color: inherit;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: 500;
+  resize: none;
+  text-align: center;
+   -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+    border: 1px solid #1F9BF0;
+  }
+
+.post-btn, .like-btn, .follow-btn {
+  border-radius: 35px;
+  border: 1px solid transparent;
+  padding: 0.8rem 1.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #1F9BF0;
+  color: #fff;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  margin-left: 1rem;
+}
+
+.follow-btn {
+  font-size: 0.8rem;
+  background-color: #D7DBDC;
+  color: rgb(15, 20, 25);
+}
+
+.who-to-follow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #626060;
+  border-radius: 20px;
+  padding: 1rem;
+  
+  & img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin: 0;
+    margin-right: 0.3rem;
+  }
+
+  & .user {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    margin: 0;
+    width: 100%;
+  }
+
+  & .user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    & h4 , p {
+    margin: 0;
+  }
+  }
+}
+
+.search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  margin-top: 0.5rem;
+
+  & .icon {
+    position: absolute;
+    left: 1rem;
+  }
+
+  & ::placeholder {
+    margin-left: 9rem;
+  }
+}
+
+.tweetItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border: 1px solid #626060;
+  border-radius: 20px;
+  width: 30rem;
+  height: 10rem;
+  margin-bottom: 1.5rem;
+}
+
+.tweet-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+ .delete-icon, .retweet-icon, .comment-icon, .like-icon {
+  display: flexbox;
+  cursor: pointer;
+  background-color: #000000;
+  border: none;
+  gap : 0.2rem;
+  font-size: 0.8rem;
+}
+
+.post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+}
+
+.post-logo {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  
+}
