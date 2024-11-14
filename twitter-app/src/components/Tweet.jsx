@@ -19,19 +19,19 @@ const Tweet = (props) => {
       {children}
       <div className="tweet-actions">
         <button onClick={onComment} className="comment-icon">
-          <FaRegComment /> Comment
+          <FaRegComment /> 
         </button>
         <button onClick={onRetweet} className="retweet-icon">
-          <FaRetweet /> Retweet
+          <FaRetweet /> 
         </button>
         <button onClick={onLike} className="like-icon">
-          <FaRegHeart /> Like {likes}
+          <FaRegHeart /> {likes}
         </button>
         <button
           onClick={() => handleDeleteTweet(index)}
           className="delete-icon"
         >
-          <MdDelete /> Delete
+          <MdDelete />
         </button>
       </div>
     </li>
