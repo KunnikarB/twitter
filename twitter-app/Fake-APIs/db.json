@@ -1,11 +1,17 @@
-[
+{
+  "users": [
+    {
+      "id": "1",
+      "name": "Kunnikar ",
+      "image": "/avatars/girl2.png",
+      "bio": "Just here, doing my thing. I love #react and #javascript"
+    },
   {
     "id": "1",
     "name": "Kunnikar ",
     "image": "/avatars/girl2.png",
     "bio": "Just here, doing my thing. I love #react and #javascript",
-    "token":
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMSJ9.chCkD_cowFTdSauUP1iprlX-uWvCQ6AuBOYcnNrFyxw"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiMSJ9.chCkD_cowFTdSauUP1iprlX-uWvCQ6AuBOYcnNrFyxw"
   },
   {
     "id": "2",
@@ -45,7 +51,7 @@
     "name": "Jake",
     "image": "/avatars/boy1.png",
     "bio": "Just Jake, nothing much",
-    "token":
-      " eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNiJ9.EcS2JmGzAHVqdSyCeCeF_eBvvUuXjlIwH75oYYqL2Eg"
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNiJ9.EcS2JmGzAHVqdSyCeCeF_eBvvUuXjlIwH75oYYqL2Eg"
   }
-]
+  ]
+}
