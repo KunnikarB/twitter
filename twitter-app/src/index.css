@@ -262,10 +262,11 @@ input[type=text]:focus {
 
 .post {
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
   align-items: center;
   gap: 1rem;
   width: 100%;
+ 
 }
 
 .post-logo {
@@ -280,4 +281,17 @@ input[type=text]:focus {
   align-items: center;
   gap: 0.5rem;
   
+}
+
+@media screen and (max-width: 768px) {
+  .tweetItem {
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 400px) {
+  .tweetItem {
+    width: 100%;
+  }
 }
