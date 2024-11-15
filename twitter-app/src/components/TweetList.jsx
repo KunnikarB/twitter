@@ -1,25 +1,41 @@
 import PropTypes from 'prop-types';
-import Tweet from './Tweet';
-import profileImg from '../../public/avatars/girl2.png';
-import AppContext from '../AppContext';
+import TweetInteractions from './TweetInteractions';
+import { TweetContext } from '../context/TweetContext';
 import { useContext } from 'react';
+import profileImg from '../../public/avatars/girl2.png';
+import { users } from '../users';
 
-const TweetList = (props) => {
-  const { tweets } = props;
-  const { user } = useContext(AppContext);
-
+const TweetList = () => {
+  const { tweets } = useContext(TweetContext);
+  
   return (
     <ul>
-      {tweets.map((tweet, tweetIndex) => (
-        <Tweet {...props} key={tweetIndex} index={tweetIndex}>
+      {tweets.map((tweet) => (
+        <div className="tweet" key={tweet.id}>
+
           <div className="post">
             <div className="user-post">
-              <img className="post-logo" src={profileImg} alt="" />
-              <small>Post by {user}</small>
+              <img className="post-logo" src={profileImg} alt="{users[0].name}" />
+              <small>Post by {users[0].name}</small>
             </div>
-            <p>{tweet}</p>
+            <p>{tweet.text}</p>
+
+            <div className="tweet-interactions">
+              <p>Likes: {tweet.likes}</p>
+              <p>Retweets: {tweet.retweets}</p>
+              <p>Replies: {tweet.replies.length}</p>
+            </div>
+
+            <TweetInteractions tweetId={tweet.id} />
+            <div className="replies">
+              {tweet.replies.map((reply) => (
+                <div key={reply.id} className='reply'>
+                  <p>💬 {reply.text}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </Tweet>
+        </div>
       ))}
     </ul>
   );
