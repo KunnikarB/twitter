@@ -1,12 +1,15 @@
 <div id="header" align="center">
- <h1> 📱 Twitter clone using React with Vite.</h1>
+ <h1> 📱 Twitter (X) clone </h1>
 </div>
 
+### Twitter (X) clone app is built with React and Vite, designed to mimic core Twitter functionalities like tweeting, liking, retweeting, commenting, and deleteing tweet.
+
 ### Login page 👩🏻‍💻
-![Screenshot 2024-11-13 at 08 24 11](https://github.com/user-attachments/assets/725bcb12-5a9f-4274-bf06-68763cd72b75)
+![Screenshot 2024-11-15 at 07 13 14](https://github.com/user-attachments/assets/202a698b-b68d-4c08-96e5-82ffda490e5e)
+
 
 ### Homepage 👩🏻‍🎤
-![Screenshot 2024-11-09 at 20 40 36](https://github.com/user-attachments/assets/f92797d3-a6e4-4815-b3a0-2ce903eedf68)
+![Screenshot 2024-11-15 at 07 12 00](https://github.com/user-attachments/assets/f7f3e85e-ded2-42e9-963d-3173436e6f5e)
 
 
 <div id="header" align="center">
@@ -14,7 +17,8 @@
 </div>
 <br><br>
 
-![Screenshot 2024-11-11 at 06 03 28](https://github.com/user-attachments/assets/059a3180-cd01-44e8-a767-fe70b6bf744e)
+![Screenshot 2024-11-15 at 07 10 01](https://github.com/user-attachments/assets/8d3cf385-c7f9-4ece-af16-ea9ec6a10d07)
+
 
 <br><br>
 <div align="center">
