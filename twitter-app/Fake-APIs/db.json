@@ -7,7 +7,7 @@
     "email": "kunnikar@gmail.com",
     "password": "123456",
     "image": "/avatars/girl2.png",
-    "bio": "Just here, doing my thing. I love #react and #javascript"
+    "bio": "I 🩷 React"
     
   },
   {
@@ -16,7 +16,7 @@
     "email": "thomas@gmail.com",
     "password": "123456",
     "image": "/avatars/boy2.png",
-    "bio": "Deploy activity feeds and chat at scale with Stream"
+    "bio": "🍋 Squeezing the day & living zestfully"
     
   },
   {
@@ -25,7 +25,7 @@
     "email": "mary@gmail.com",
     "password": "123456",
     "image": "/avatars/girl1.png",
-    "bio": "Just Jake, nothing much",
+    "bio": "Spreading love & positivity 💖"
   },
   {
     "id": "4",
@@ -33,7 +33,7 @@
     "email": "hanks@gmail.com",
     "password": "123456",
     "image": "/avatars/boy3.png",
-    "bio": "How are you?"
+    "bio": "🍬 Life's sweet | 💖 And so am I"
   },
   {
     "id": "5",
@@ -41,7 +41,7 @@
     "email": "daisy@gmail.com",
     "password": "123456",
     "image": "/avatars/girl3.png",
-    "bio": "I am Daisy here. I do things on #react and #javascript"
+    "bio": "🌼 Daisy days | 🌙 Cozy nights "
   },
   {
     "id": "6",
@@ -49,7 +49,7 @@
     "email": "jake@gmail.com",
     "password": "123456",
     "image": "/avatars/boy1.png",
-    "bio": "Just Jake, nothing much"
+    "bio": "🍩 Donut worry, be happy 😊"
   }
   ]
 }

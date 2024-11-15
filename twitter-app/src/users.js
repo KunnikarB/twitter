@@ -5,8 +5,7 @@ export const users = [
     email: 'kunnikar@gmail.com',
     password: '123456',
     image: '/avatars/girl2.png',
-    bio: 'I love #react and #javascript',
-    
+    bio: '"bio": "I 🩷 React"',
   },
   {
     id: '2',
@@ -14,8 +13,7 @@ export const users = [
     image: '/avatars/boy2.png',
     email: 'Thomas@gmail.com',
     password: '123456',
-    bio: 'Deploy activity feeds and chat at scale with Stream',
-    
+    bio: '🍋 Squeezing the day & living zestfully',
   },
   {
     id: '3',
@@ -23,7 +21,7 @@ export const users = [
     email: 'mary@gmail.com',
     password: '123456',
     image: '/avatars/girl1.png',
-    bio: 'Just Jake, nothing much',
+    bio: 'Spreading love & positivity 💖',
   },
   {
     id: '4',
@@ -31,8 +29,7 @@ export const users = [
     email: 'hanks@gmail.com',
     password: '123456',
     image: '/avatars/boy3.png',
-    bio: 'How are you?',
-  
+    bio: "🍬 Life's sweet | 💖 And so am I",
   },
   {
     id: '5',
@@ -40,8 +37,7 @@ export const users = [
     email: 'daisy@gmail.com',
     password: '123456',
     image: '/avatars/girl3.png',
-    bio: 'I am Daisy here. I do things on #react and #javascript',
-    
+    bio: '🌼 Daisy days | 🌙 Cozy nights',
   },
   {
     id: '6',
@@ -49,7 +45,6 @@ export const users = [
     email: 'jake@gmail.com',
     password: '123456',
     image: '/avatars/boy1.png',
-    bio: 'Just Jake, nothing much',
-    
+    bio: '🍩 Donut worry, be happy 😊',
   },
 ];
