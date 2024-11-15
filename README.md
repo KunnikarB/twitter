@@ -2,6 +2,7 @@
  <h1> 📱 Twitter (X) clone </h1>
 </div>
 
+
 ### Twitter (X) clone app is built with React and Vite, designed to mimic core Twitter functionalities like tweeting, liking, retweeting, commenting, and deleteing tweet.
 
 ### Login page 👩🏻‍💻
