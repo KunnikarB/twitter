@@ -1,32 +1,18 @@
-import {useState} from 'react';
 import TweetInput from '../components/TweetInput';
 import TweetList from '../components/TweetList';
 import Header from '../components/Header';
 import Profile from '../components/Profile';
 import RightSidebar from '../components/RightSidebar';
 import Sidebar from '../components/Sidebar';
-import AppContext from '../AppContext';
+import { TweetContext } from '../context/TweetContext';
 
 import '../App.css';
 import '../index.css';
 
 const Home = () => {
-  const [tweets, setTweets] = useState([]);
-  const [user, setUser] = useState('Kunnikar');
-
-  const addTweet = (tweet) => {
-    setTweets([tweet, ...tweets]);
-  };
-
-  function handleDeleteTweet(Index) {
-    const newTweet = tweets.filter((tweet, tweetIndex) => {
-      return tweetIndex !== Index;
-    });
-    setTweets(newTweet);
-  }
-
+  
   return (
-    <AppContext.Provider value={{ tweets, setTweets, user, setUser }}>
+    <TweetContext>
       <div className="layout ">
         <div className="left-sidebar">
           <Sidebar />
@@ -41,11 +27,10 @@ const Home = () => {
             <Profile />
 
             <div className="card">
-              <TweetInput addTweet={addTweet} />
-              <TweetList
-                tweets={tweets}
-                handleDeleteTweet={handleDeleteTweet}
-              />
+              <div className='input-tweet'>
+              <TweetInput />
+              </div>
+              <TweetList />
             </div>
           </div>
         </div>
@@ -54,7 +39,7 @@ const Home = () => {
           <RightSidebar />
         </div>
       </div>
-    </AppContext.Provider>
+    </TweetContext>
   );
 }
 
