@@ -2,6 +2,7 @@ import Xsvg from './svgs/X';
 import { MdHomeFilled } from 'react-icons/md';
 import { IoNotifications } from 'react-icons/io5';
 import { FaUser } from 'react-icons/fa';
+import UserProfile from './UserProfile';
 import '../index.css';
 
 const Sidebar = () => {
@@ -10,7 +11,8 @@ const Sidebar = () => {
     fontSize: '20px',
   };
   return (
-    <div>
+    <div className='sidebar-container'>
+    <div className='sidebar-top'>
       <div className="logo">
         <Xsvg />
       </div>
@@ -31,6 +33,10 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+    </div>
+    <div className='sidebar-user'>
+      <UserProfile />
+    </div>
     </div>
   );
 };

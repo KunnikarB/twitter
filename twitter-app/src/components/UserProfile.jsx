@@ -2,6 +2,7 @@ import { useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { useState, useEffect } from 'react';
 
+
 const ProfileContainer = styled.div`
   
   color: white;

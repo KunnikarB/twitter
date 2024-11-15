@@ -5,7 +5,6 @@ import UserProfile from '../components/UserProfile';
 import RightSidebar from '../components/RightSidebar';
 import Sidebar from '../components/Sidebar';
 import { TweetProvider } from '../context/TweetContext';
-
 import '../App.css';
 import '../index.css';
 
