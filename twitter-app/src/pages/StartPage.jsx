@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import  {users}  from '../users.js';
-import { saveToStorage } from '../utils/storage';
+import { useNavigate } from 'react-router-dom';
 
 const Main = styled.main`
   background-color: black;
@@ -55,9 +55,10 @@ const Main = styled.main`
 `;
 
 export default function StartPage() {
+  const navigate = useNavigate();
+
   const onClickUser = (id) => {
-    saveToStorage('user', id);
-    window.location.href = '/home';
+    navigate(`/profile/${id}`); // Navigate to the user's profile page
   };
 
   return (

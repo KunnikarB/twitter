@@ -1,7 +1,7 @@
 import TweetInput from '../components/TweetInput';
 import TweetList from '../components/TweetList';
 import Header from '../components/Header';
-import Profile from '../components/UserProfile';
+import UserProfile from '../components/UserProfile';
 import RightSidebar from '../components/RightSidebar';
 import Sidebar from '../components/Sidebar';
 import { TweetProvider } from '../context/TweetContext';
@@ -9,13 +9,14 @@ import { TweetProvider } from '../context/TweetContext';
 import '../App.css';
 import '../index.css';
 
-const Home = () => {
+
+const Profile = () => {
+  
   return (
     <TweetProvider>
       <div className="layout ">
         <div className="left-sidebar">
           <Sidebar />
-          <Profile />
         </div>
 
         <div className="homepage ">
@@ -23,7 +24,7 @@ const Home = () => {
             <Header />
           </div>
           <div className="header">
-            <Profile />
+            <UserProfile />
 
             <div className="card">
               <div className="input-tweet">
@@ -42,4 +43,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Profile;
