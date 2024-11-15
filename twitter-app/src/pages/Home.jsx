@@ -4,7 +4,7 @@ import Header from '../components/Header';
 import Profile from '../components/Profile';
 import RightSidebar from '../components/RightSidebar';
 import Sidebar from '../components/Sidebar';
-import { TweetContext } from '../context/TweetContext';
+import { TweetProvider } from '../context/TweetContext';
 
 import '../App.css';
 import '../index.css';
@@ -12,7 +12,7 @@ import '../index.css';
 const Home = () => {
   
   return (
-    <TweetContext>
+    <TweetProvider>
       <div className="layout ">
         <div className="left-sidebar">
           <Sidebar />
@@ -39,7 +39,7 @@ const Home = () => {
           <RightSidebar />
         </div>
       </div>
-    </TweetContext>
+    </TweetProvider>
   );
 }
 
