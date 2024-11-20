@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import TweetInteractions from './TweetInteractions';
 import { TweetContext } from '../context/TweetContext';
 import { useContext } from 'react';
-import profileImg from '../avatars/girl2.png';
+import profileImg from '../../public/avatars/girl2.png';
 import { users } from '../users';
 
 const TweetList = () => {
