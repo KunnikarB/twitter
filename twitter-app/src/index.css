@@ -270,7 +270,6 @@ input[type=text]:focus {
 .post {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   gap: 1rem;
   width: 100%;
@@ -286,12 +285,32 @@ input[type=text]:focus {
 }
 
 .user-post {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 0;
+}
+
+.post-context {
   display: flex;
   flex-direction: column;
   align-items: center;
+  }
+
+.post-by{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   gap: 0.5rem;
-  
 }
+
+.post-by small {
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+
 
 .sidebar-container {
   display: flex;

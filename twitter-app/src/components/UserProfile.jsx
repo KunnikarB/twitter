@@ -11,7 +11,7 @@ const ProfileContainer = styled.div`
   align-items: center;
   padding: 20px;
   width: 100%;
-  height: 100vh;
+  height: auto;
   overflow: auto;
 
   img {
@@ -63,12 +63,11 @@ export default function Profile() {
   if (!user) {
     return <ProfileContainer>Loading...</ProfileContainer>;
   }
-
+  
   return (
     <ProfileContainer>
       <img src={user.image} alt={user.name} />
-      <small>{user.name}</small>
-      <p>Bio : {user.bio}</p>
+      <small>@{user.name}</small>
     </ProfileContainer>
   );
 }

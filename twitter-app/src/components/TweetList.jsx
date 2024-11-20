@@ -12,9 +12,14 @@ const TweetList = () => {
       {tweets.map((tweet) => (
         <div className="tweet" key={tweet.id}>
           <div className="post">
-             <UserProfile user={tweet.user} />
+            <div className="post-context">
+              <div className='post-by'>
+                <small>Post by:</small>
+                <UserProfile user={tweet.user} />
+              </div>
               <p>{tweet.text}</p>
-              
+            </div>
+
             <div className="tweet-interactions">
               <p>Likes: {tweet.likes}</p>
               <p>Retweets: {tweet.retweets}</p>
