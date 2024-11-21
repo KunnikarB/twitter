@@ -58,16 +58,20 @@
 
 - react-router-dom: for adding routes for different pages in the application.
 - styled-components: for CSS-in-JS styles
-
+- react toastify
 - react icons : for icons
+- json-server
 
 ### Install the dependencies by running: 👇🏻
-- npm install react-router-dom styled-components react-icons   
+- npm install react-router-dom styled-components react-icons
+- npm i react-toastify
+- npm install json-server
 
 <br>
 
  ### Start development
  - npm run dev
+ - json-server --watch db.json
 
 ### React + Vite
 
