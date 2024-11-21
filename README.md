@@ -20,6 +20,10 @@
 
 ![Screenshot 2024-11-15 at 07 10 01](https://github.com/user-attachments/assets/8d3cf385-c7f9-4ece-af16-ea9ec6a10d07)
 
+### Following ❤️
+
+![Screenshot 2024-11-21 at 14 39 28](https://github.com/user-attachments/assets/074c89a4-6293-4afd-9a4f-107f8508cc1b)
+
 
 <br><br>
 <div align="center">
@@ -29,7 +33,11 @@
  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWlwemw2bG5veXRsYzcxbXBpeHprcHA4cWVicW1sYzN3Nmt2czFjbSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/L1R1tvI9svkIWwpVYr/giphy.gif" width="600" height="300"/>
 </div>
 
+
+
+
 <br><br>
+
  
 ### 👉🏻 React.js for front-end development.
 -  Manage state using useState() hook
