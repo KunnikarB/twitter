@@ -6,6 +6,7 @@ import UserProfile from './UserProfile';
 import '../index.css';
 import { useUserContext } from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const style = {
@@ -41,8 +42,10 @@ const Sidebar = () => {
               Notifications
             </li>
             <li>
-              <FaUser style={style} />
-              Profile
+              <Link to="/profile">
+                <FaUser style={style} />
+                Profile
+              </Link>
             </li>
           </ul>
         </div>
