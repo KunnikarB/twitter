@@ -5,7 +5,7 @@ export const users = [
     email: 'kunnikar@gmail.com',
     password: '123456',
     image: '/avatars/girl2.png',
-    bio: '"bio": "I 🩷 React"',
+    bio: 'I 🩷 React',
   },
   {
     id: '2',
