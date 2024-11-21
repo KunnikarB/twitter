@@ -133,16 +133,26 @@
 
 @media screen and (max-width: 480px) {
   .layout {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: 
+      "homepage"
+      "left-sidebar"   
   }
 
   .header{
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .sidebar-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    gap: 1rem;
   }
 
   .sidebar ul {
@@ -152,13 +162,18 @@
     gap: 1rem;
   }
 
+  .sidebar-user {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0;
+  }
+
   .logo {
     width: 30px;
     height: 30px;
     margin: 20px auto;
   }
 
-  .left-sidebar .profile {
-    display: none;
-  }
 }
