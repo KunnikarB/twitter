@@ -15,9 +15,14 @@ export const UserProvider = ({ children }) => {
     }
   };
 
+  const unfollowUser = (userId) => {
+    setFollowedUsers((prev) => prev.filter((user) => user.id !== userId));
+  };
+
+
   return (
     <UserContext.Provider
-      value={{ users, currentUser, setCurrentUser, followedUsers, followUser }}
+      value={{ users, currentUser, setCurrentUser, followedUsers, followUser, unfollowUser }}
     >
       {children}
     </UserContext.Provider>
