@@ -42,7 +42,7 @@ export default function Profile() {
     // Fetch user data dynamically
     const fetchUserData = async () => {
       try {
-        const response = await fetch(`http://localhost:3000/users/${userId}`);
+        const response = await fetch(`/api/users/${userId}`);
         if (!response.ok) {
           throw new Error('Failed to fetch user data');
         }
