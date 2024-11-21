@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import  {users}  from '../users.js';
 import { useNavigate } from 'react-router-dom';
+import { useUserContext } from '../context/UserContext';
 
 const Main = styled.main`
   background-color: black;
@@ -56,8 +56,11 @@ const Main = styled.main`
 
 export default function StartPage() {
   const navigate = useNavigate();
+  const { users, setCurrentUser } = useUserContext();
 
   const onClickUser = (id) => {
+    const user = users.find((u) => u.id === id);
+    setCurrentUser(user); // Set the current user
     navigate(`/profile/${id}`); // Navigate to the user's profile page
   };
 
