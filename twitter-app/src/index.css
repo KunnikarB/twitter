@@ -344,7 +344,7 @@ input[type=text]:focus {
       background-color: #1F9BF0;
       color: #fff;
       font-weight: 500;
-      padding: 0.5rem 1rem;
+      padding: 0.5rem;
       border-radius: 20px;
       cursor: pointer;
       transition: all 0.25s;
@@ -380,3 +380,28 @@ body {
   cursor: pointer;
 }
 
+/* Ensure the profile container is positioned relatively for hover targeting */
+.profile-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Hide the button by default */
+.logout-btn {
+  display: none;
+  position: absolute; /* Position the button relative to the container */
+  top: 40%; /* Adjust to position button appropriately */
+  left: 140%; /* Place button beside the profile image */
+  transform: translate(-50%, -50%);
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+/* Show the button when hovering over the profile container */
+.profile-container:hover .logout-btn {
+  display: block;
+}

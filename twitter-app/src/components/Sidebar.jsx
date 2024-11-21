@@ -48,9 +48,13 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar-user">
-        <div className='user-logout'>
-          <UserProfile />
-          <button onClick={Logout} className='btn'>Logout</button>
+        <div className="user-logout">
+          <div className="profile-container">
+            <UserProfile />
+            <button onClick={Logout} className="btn logout-btn">
+              Logout
+            </button>
+          </div>
         </div>
       </div>
     </div>
