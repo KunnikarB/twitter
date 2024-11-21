@@ -1,6 +1,8 @@
+
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { useUserContext } from '../context/UserContext';
+import { saveToStorage } from '../utils/storage';
 
 const Main = styled.main`
   background-color: black;
@@ -16,7 +18,6 @@ const Main = styled.main`
     color: white;
     font-size: 30px;
     margin-bottom: 40px;
-
   }
 
   .users {
@@ -30,13 +31,6 @@ const Main = styled.main`
     &__user {
       display: flex;
       flex-direction: column;
-      img {
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        margin-bottom: 5px;
-      }
-
       img {
         width: 50px;
         height: 50px;
@@ -60,8 +54,11 @@ export default function StartPage() {
 
   const onClickUser = (id) => {
     const user = users.find((u) => u.id === id);
-    setCurrentUser(user); // Set the current user
-    navigate(`/profile/${id}`); // Navigate to the user's profile page
+    if (user) {
+      setCurrentUser(user); // Update user in context
+      saveToStorage('currentUser', JSON.stringify(user)); // Save user to localStorage
+      navigate(`/profile/${id}`); // Redirect to the profile page
+    }
   };
 
   return (

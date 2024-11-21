@@ -1,12 +1,34 @@
-import { useUserContext } from '../context/UserContext';
 import Xsvg from '../components/svgs/X';
 import Header from '../components/Header';
+import { useEffect, useState } from 'react';
+import { useUserContext } from '../context/UserContext';
+import { getFromStorage } from '../utils/storage';
+import { useNavigate } from 'react-router-dom';
 
 import '../index.css';
 import { Link } from 'react-router-dom';
 
 const Following = () => {
-  const { currentUser,followedUsers, unfollowUser } = useUserContext();
+  const { currentUser, followedUsers, unfollowUser, setCurrentUser } = useUserContext();
+  const navigate = useNavigate();
+  const [user, setUser] = useState(currentUser);
+
+  useEffect(() => {
+    if (!currentUser) {
+      const storedUser = getFromStorage('currentUser');
+      if (storedUser) {
+        setCurrentUser(JSON.parse(storedUser)); // Restore user to context
+        setUser(JSON.parse(storedUser)); // Update local state
+      } else {
+        navigate('/'); // Redirect to StartPage if no user is found
+      }
+    }
+  }, [currentUser, navigate, setCurrentUser]);
+
+  if (!user) {
+    return null; // Prevent rendering until user data is available
+  }
+
 
   return (
     <>
@@ -15,7 +37,9 @@ const Following = () => {
           <Link to={`/profile/${currentUser.id}`}>
             <Xsvg />
           </Link>
+
         </div>
+        
         <div className="homepage ">
           <div className="">
             <Header />
