@@ -5,8 +5,7 @@ import { FaUser } from 'react-icons/fa';
 import UserProfile from './UserProfile';
 import '../index.css';
 import { useUserContext } from '../context/UserContext';
-import { useNavigate } from 'react-router-dom';
-import { Link } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 const Sidebar = () => {
   const style = {
@@ -14,39 +13,44 @@ const Sidebar = () => {
     fontSize: '20px',
   };
 
-  
   const navigate = useNavigate();
-  const { setCurrentUser } = useUserContext();
+  const { currentUser, setCurrentUser } = useUserContext();
 
   const Logout = () => {
     setCurrentUser(null); // Clear the current user
-    navigate('/'); 
+    navigate('/'); // Redirect to StartPage
   };
-
 
   return (
     <div className="sidebar-container">
       <div className="sidebar-top">
         <div className="logo">
-          <Xsvg />
+          <Link to="/">
+            <Xsvg />
+          </Link>
         </div>
         <div className="sidebar">
           <ul>
-            <li>
-              <MdHomeFilled style={style} />
-              Home
-            </li>
-
+        
+              <li>
+                <Link to={`/profile/${currentUser.id}`}>
+                  <MdHomeFilled style={style} />
+                  Home
+                </Link>
+              </li>
+          
             <li>
               <IoNotifications style={style} />
               Notifications
             </li>
-            <li>
-              <Link to="/profile">
-                <FaUser style={style} />
-                Profile
-              </Link>
-            </li>
+            
+              <li>
+                <Link to={`/profile/${currentUser.id}`}>
+                  <FaUser style={style} />
+                  Profile
+                </Link>
+              </li>
+            
           </ul>
         </div>
       </div>

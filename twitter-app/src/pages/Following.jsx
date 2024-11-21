@@ -22,7 +22,7 @@ const Following = () => {
           </div>
           <div className="header">
             <div className="following-page">
-              <h2>Following</h2>
+              <h2>You Following</h2>
               {followedUsers.length > 0 ? (
                 <div className="following-list">
                   {followedUsers.map((user) => (
