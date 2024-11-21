@@ -1,21 +1,21 @@
 import { useUserContext } from '../context/UserContext';
-import Sidebar from '../components/Sidebar';
+import Xsvg from '../components/svgs/X';
 import Header from '../components/Header';
 
-
 import '../index.css';
- 
+import { Link } from 'react-router-dom';
 
 const Following = () => {
-  const { followedUsers, unfollowUser } = useUserContext();
+  const { currentUser,followedUsers, unfollowUser } = useUserContext();
 
   return (
     <>
       <div className="layout ">
-        <div className="left-sidebar">
-          <Sidebar />
+        <div className="logo">
+          <Link to={`/profile/${currentUser.id}`}>
+            <Xsvg />
+          </Link>
         </div>
-
         <div className="homepage ">
           <div className="">
             <Header />
