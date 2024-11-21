@@ -7,8 +7,18 @@ const UserContext = createContext();
 export const UserProvider = ({ children }) => {
   const [currentUser, setCurrentUser] = useState(null); // Track the current user
 
+  const [followedUsers, setFollowedUsers] = useState([]);
+
+  const followUser = (user) => {
+    if (!followedUsers.some((u) => u.id === user.id)) {
+      setFollowedUsers((prev) => [...prev, user]);
+    }
+  };
+
   return (
-    <UserContext.Provider value={{ users, currentUser, setCurrentUser }}>
+    <UserContext.Provider
+      value={{ users, currentUser, setCurrentUser, followedUsers, followUser }}
+    >
       {children}
     </UserContext.Provider>
   );

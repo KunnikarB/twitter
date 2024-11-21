@@ -4,7 +4,7 @@ import { useUserContext } from '../context/UserContext';
 
 const RightSidebar = () => {
   
-  const { users, currentUser} = useUserContext();
+  const { users, currentUser, followUser} = useUserContext();
 
   const filteredUsers = users.filter((user) => user.id !== currentUser.id);
 
@@ -28,7 +28,9 @@ const RightSidebar = () => {
                 <p>{user.bio}</p>
               </div>
             </div>
-            <button className="follow-btn">Follow</button>
+            <button onClick={() => followUser(user)} className="follow-btn">
+              Follow
+            </button>
           </div>
         ))}
       </div>
