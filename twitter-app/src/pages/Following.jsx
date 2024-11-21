@@ -1,8 +1,6 @@
 import { useUserContext } from '../context/UserContext';
 import '../index.css';
 
-
-
 const Following = () => {
   const { followedUsers, unfollowUser } = useUserContext();
 

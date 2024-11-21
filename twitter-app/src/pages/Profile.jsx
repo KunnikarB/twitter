@@ -12,33 +12,36 @@ import '../index.css';
 const Profile = () => {
   
   return (
-    <TweetProvider>
-      <div className="layout ">
-        <div className="left-sidebar">
-          <Sidebar />
-        </div>
-
-        <div className="homepage ">
-          <div className="">
-            <Header />
+    <>
+      
+      <TweetProvider>
+        <div className="layout ">
+          <div className="left-sidebar">
+            <Sidebar />
           </div>
-          <div className="header">
-            <UserProfile />
 
-            <div className="card">
-              <div className="input-tweet">
-                <TweetInput />
+          <div className="homepage ">
+            <div className="">
+              <Header />
+            </div>
+            <div className="header">
+              <UserProfile />
+
+              <div className="card">
+                <div className="input-tweet">
+                  <TweetInput />
+                </div>
+                <TweetList />
               </div>
-              <TweetList />
             </div>
           </div>
-        </div>
 
-        <div className="right-sidebar">
-          <RightSidebar />
+          <div className="right-sidebar">
+            <RightSidebar />
+          </div>
         </div>
-      </div>
-    </TweetProvider>
+      </TweetProvider>
+    </>
   );
 };
 
