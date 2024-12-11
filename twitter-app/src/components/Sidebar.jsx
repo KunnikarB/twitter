@@ -22,38 +22,39 @@ const Sidebar = () => {
   };
 
   return (
-    <div className="sidebar-container">
-      <div className="sidebar-top">
-        <div className="logo">
-          <Link to="/">
-            <Xsvg />
-          </Link>
-        </div>
-        <div className="sidebar">
-          <ul>
-        
+    <>
+      <div className="sidebar-container">
+        <div className="sidebar-top">
+          <div className="logo">
+            <Link to="/">
+              <Xsvg />
+            </Link>
+          </div>
+          <div className="sidebar">
+            <ul>
               <li>
                 <Link to={`/profile/${currentUser.id}`}>
                   <MdHomeFilled style={style} />
                   Home
                 </Link>
               </li>
-          
-            <li>
-              <IoNotifications style={style} />
-              Notifications
-            </li>
-            
+
+              <li>
+                <IoNotifications style={style} />
+                Notifications
+              </li>
+
               <li>
                 <Link to={`/profile/${currentUser.id}`}>
                   <FaUser style={style} />
                   Profile
                 </Link>
               </li>
-            
-          </ul>
+            </ul>
+          </div>
         </div>
       </div>
+
       <div className="sidebar-user">
         <div className="user-logout">
           <div className="profile-container">
@@ -64,7 +65,7 @@ const Sidebar = () => {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 export default Sidebar;

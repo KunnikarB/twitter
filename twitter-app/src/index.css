@@ -325,8 +325,15 @@ input[type=text]:focus {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  margin-top: 1rem;  
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
   margin-top: 1rem;
-  
 }
 .sidebar-user {
   display: flex;
