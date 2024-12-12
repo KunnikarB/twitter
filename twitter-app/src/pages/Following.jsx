@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useUserContext } from '../context/UserContext';
 import { getFromStorage } from '../utils/storage';
 import { useNavigate } from 'react-router-dom';
-import RightSideBar from '../components/RightSideBar';
+import RightSideBar from '../components/RightSidebar';
 import '../index.css';
 import { Link } from 'react-router-dom';
 

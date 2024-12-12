@@ -2,7 +2,7 @@ import TweetInput from '../components/TweetInput';
 import TweetList from '../components/TweetList';
 import Header from '../components/Header';
 import UserProfile from '../components/UserProfile';
-import RightSidebar from '../components/RightSideBar';
+import RightSidebar from '../components/RightSidebar';
 import Sidebar from '../components/Sidebar';
 import { TweetProvider } from '../context/TweetContext';
 import { useEffect, useState } from 'react';
