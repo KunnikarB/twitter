@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { useUserContext } from '../context/UserContext';
 import { getFromStorage } from '../utils/storage';
 import { useNavigate } from 'react-router-dom';
-
+import RightSideBar from '../components/RightSideBar';
 import '../index.css';
 import { Link } from 'react-router-dom';
 
@@ -44,6 +44,7 @@ const Following = () => {
           <div className="">
             <Header />
           </div>
+
           <div className="header">
             <div className="following-page">
               <h2>You Following</h2>
@@ -74,6 +75,10 @@ const Following = () => {
               )}
             </div>
           </div>
+        </div>
+
+        <div>
+          <RightSideBar />
         </div>
       </div>
     </>

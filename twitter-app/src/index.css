@@ -413,6 +413,19 @@ body {
   display: block;
 }
 
+.user {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.following-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
 
 .following-page {
   display: flex;

@@ -2,7 +2,7 @@ import TweetInput from '../components/TweetInput';
 import TweetList from '../components/TweetList';
 import Header from '../components/Header';
 import UserProfile from '../components/UserProfile';
-import RightSidebar from '../components/RightSidebar';
+import RightSidebar from '../components/RightSideBar';
 import Sidebar from '../components/Sidebar';
 import { TweetProvider } from '../context/TweetContext';
 import { useEffect, useState } from 'react';
@@ -37,7 +37,6 @@ const Profile = () => {
   
   return (
     <>
-      
       <TweetProvider>
         <div className="layout ">
           <div className="left-sidebar">
@@ -55,7 +54,7 @@ const Profile = () => {
                 <div className="input-tweet">
                   <TweetInput />
                 </div>
-                <TweetList />
+                  <TweetList />                
               </div>
             </div>
           </div>
