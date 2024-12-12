@@ -18,6 +18,7 @@ const Main = styled.main`
     color: white;
     font-size: 30px;
     margin-bottom: 40px;
+   
   }
 
   .users {
